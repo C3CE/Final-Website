@@ -962,6 +962,16 @@ body{
     transform: translate(760px, -70px);
 }
 
+.footer{
+    height: 472px;
+    background-color: var(--dark-gray);
+    color: #fff;
+}
+
+.logo-cpy{
+    width: 54px;
+    height: 54px;
+}
 
 /* Styles of Scrollbar */
 
