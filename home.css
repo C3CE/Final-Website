@@ -962,15 +962,42 @@ body{
     transform: translate(760px, -70px);
 }
 
+
+/* Styles of Footer */
+
+
 .footer{
     height: 472px;
     background-color: var(--dark-gray);
     color: #fff;
+    margin-top: 150px;
+    display: flex;
+    justify-content: center;
+}
+
+
+.cpy{
+    margin-top: 100px;
+    width: 1596px;
+    height: 215px;
+    
 }
 
 .logo-cpy{
     width: 54px;
     height: 54px;
+}
+
+.mail{
+    width: 225px;
+    height: 27px;
+    align-items: center;
+    gap: 7.5px;
+}
+
+.mail-img{
+    width: 21px;
+    height: 16.5;
 }
 
 /* Styles of Scrollbar */
