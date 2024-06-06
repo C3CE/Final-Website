@@ -980,7 +980,8 @@ body{
     margin-top: 100px;
     width: 1596px;
     height: 215px;
-    
+        display: flex;
+    align-items: center;
 }
 
 .logo-cpy{
@@ -991,14 +992,40 @@ body{
 .mail{
     width: 225px;
     height: 27px;
-    align-items: center;
     gap: 7.5px;
+    display: flex;
+    align-items: center;
 }
 
 .mail-img{
-    width: 21px;
-    height: 16.5;
+    width: 24px;
+    height: 20px;
 }
+
+.phone{
+    margin-top: 21.5px;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.phone-img{
+    width: 24px;
+    height: 24px;
+}
+
+.map{
+    margin-top: 21.5px;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.location-img{
+    width: 24px;
+    height: 24px;
+}
+
 
 /* Styles of Scrollbar */
 
