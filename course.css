@@ -28,7 +28,7 @@ body{
     display: block;
     margin-left: 2.5%;
     margin-top: 40px;
-    border-radius: 8px;
+    border-radius: 8px; 
 }
 
 .top-banner p{
@@ -103,6 +103,7 @@ body{
 }
 
 .signup{
+    margin-left: 200px;
     font-size: 18px;
     border: none;
     background-color: var(--gray);
@@ -132,18 +133,18 @@ body{
     display: flex;
     margin-left: 670px
 }
-
+/*  */
 .title-texts{
     width: 1620px;
     height: 160px;
     color: #fff;
     border-bottom: 1px solid gray;
     display: flex;
-    gap: 80px;
+    gap: 300px;
     padding: 0 60px 40px 60px;
     margin-top: 222px;
-    margin-left: 20px;
-    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .title-texts h1{
@@ -165,7 +166,8 @@ body{
     width: 1360px;
     height: 927px;
     margin-top: 100px;
-    margin-left: 132px;
+    margin-left: auto;
+    margin-right: auto;
     border-radius: 12px;
     gap: 50px;
 
@@ -280,6 +282,7 @@ body{
     color: #fff;
     border: 1px solid gray;
     border-radius: 0 0 10px 10px;
+    place-content: center;
 }
 
 .one{

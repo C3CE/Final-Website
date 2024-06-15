@@ -103,6 +103,7 @@ body{
 }
 
 .signup{
+    margin-left: 200px; 
     font-size: 18px;
     border: none;
     background-color: var(--gray);
