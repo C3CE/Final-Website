@@ -1,0 +1,505 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #313131;
+    font-family: "Be Vietnam Pro", sans-serif;
+}
+
+:root{
+    --purple: #9500ff;
+    --gray: #313131;
+    --dark-gray: #2d2d2d;
+}
+
+
+/* Styles of Nav */
+
+
+.nav-banner{
+    color: #fff;
+    font-size: 18px;
+    background-color: var(--purple);
+    height: 40px;
+    width: 95%;
+    display: block;
+    margin-left: 2.5%;
+    margin-top: 40px;
+    border-radius: 8px;
+}
+
+.top-banner p{
+    display: inline-block;
+    margin-top: 8px;
+    margin-left: 35%;
+}
+
+.top-banner img{
+    position: relative;
+    transform: translate(23px);
+    cursor: pointer;
+    background-color: var(--purple);
+    transition: all 0.3s ease-in;
+}
+
+.top-banner img:hover{
+    transform: rotate(180deg);
+}
+
+.navbar{
+    display: flex;
+    margin-top: 20px;
+}
+
+.logo{
+    width: 54px;
+    height: 54px;
+    cursor: pointer;
+    transition: all 0.3s ease-in;
+}
+
+.logo:hover{
+    transform: rotate(180deg);
+    filter: drop-shadow(0 0 5 var(--purple));
+}
+
+.pages button{
+    font-size: 18px;
+    border: none;
+    background-color: var(--gray);
+    cursor: pointer;
+    color: #fff;
+    margin-left: 40px;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    transform: translate(0, -22px);
+}
+
+.pages a{
+    text-decoration: none;
+    color: #fff;
+    transition: all 0.3s ease-in;
+}
+
+.pages a:hover{
+    filter: drop-shadow(0 0 5px gray);
+}
+
+.main-logo{
+    display: none;
+}
+
+.hamburger {
+    display: none;
+    cursor: pointer;
+}
+
+.pages{
+    margin-left: 120px;
+}
+
+.signup{
+    font-size: 18px;
+    border: none;
+    background-color: var(--gray);
+    cursor: pointer;
+    color: #fff;
+    margin-top: -5px;
+}
+
+.login{
+    margin-left: 30px;
+    background-color: var(--purple);
+    border: none;
+    cursor: pointer;
+    color: #fff;
+    font-size: 18px;
+    width: 105px;
+    height: 55px;
+    border-radius: 8px;
+}
+
+.acc a{
+    text-decoration: none;
+    color: #fff;
+}
+
+.acc{
+    display: flex;
+    margin-left: 670px
+}
+/*  */
+.title-texts{
+    width: 1620px;
+    height: 160px;
+    color: #fff;
+    border-bottom: 1px solid gray;
+    display: flex;
+    gap: 80px;
+    padding: 0 60px 40px 60px;
+    margin-top: 222px;
+    margin-left: 20px;
+    justify-content: center;
+}
+
+.title-texts h1{
+    width: 600px;
+    height: 114px;
+    font-size: 38px;
+    font-weight: 600;
+}
+
+.title-texts p{
+    width: 600px;
+    height: 120px;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.video{
+    margin-top: 100px;
+    display: flex;
+    justify-content: center;
+}
+
+.video img{
+    width: 1300px;
+}
+
+/*  */
+.footer{
+    height: 472px;
+    background-color: var(--dark-gray);
+    color: #fff;
+    margin-top: 150px;
+    display: flex;
+    justify-content: center;
+}
+
+
+.cpy{
+    margin-top: 100px;
+    max-width:  1600px;
+    width: auto;
+    height: 215px;
+    display: flex;
+    align-items: center;
+    padding-bottom: 50px;
+    border-bottom: 1px solid gray;
+}
+
+.logo-cpy{
+    width: 54px;
+    height: 54px;
+}
+
+.contact{
+    margin-top: 40px;
+}
+
+.mail{
+    width: 225px;
+    height: 27px;
+    gap: 7.5px;
+    display: flex;
+    align-items: center;
+}
+
+.mail-img{
+    width: 24px;
+    height: 20px;
+}
+
+.phone{
+    margin-top: 21.5px;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.phone-img{
+    width: 24px;
+    height: 24px;
+}
+
+.map{
+    margin-top: 21.5px;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.location-img{
+    width: 24px;
+    height: 24px;
+}
+
+.second-part{
+    display: flex;
+}
+
+.one{
+    margin-left: 559px;
+}
+
+.type-one{
+    color: #bebebe;
+}
+
+.btn-ones{
+    margin-top: 14px;
+}
+
+.btn-ones p{
+    cursor: pointer;
+    margin-top: 4px;
+}
+
+.two{
+    margin-left: 30px;
+}
+
+.type-two{
+    color: #bebebe;
+}
+
+.btn-twos{
+    margin-top: 14px;
+}
+
+.btn-twos p{
+    cursor: pointer;
+    margin-top: 4px;
+}
+
+.three{
+    margin-left: 30px;
+}
+
+.type-three{
+    color: #bebebe;
+}
+
+.img-threes{
+    margin-top: 14px;
+}
+
+.first{
+    margin-left: 0;
+    cursor: pointer;
+}
+
+.second, .third{
+    margin-left: 14px;
+    cursor: pointer;
+}
+
+.cpyout span{
+    display: flex;
+    margin-top: 50px;
+    justify-content: center;
+}
+
+@media (max-width: 426px) {
+
+    .pages {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        background-color: var(--gray);
+        position: absolute;
+        top: 60px;
+        left: 0;
+        position: static;
+        transform: translate(-110px,80px);
+        z-index: 1;
+        width: auto;
+        height: auto;
+        margin-left: 0;
+        padding-top: 0;
+        box-shadow: none;
+    }
+
+    .signup{
+        position: absolute;
+        transform: translate(-900px,20px);
+        width: 53px;
+        font-size: 14px;
+    }
+
+    .login{
+        position: absolute;
+        transform: translate(-850px);
+        width: 78px;
+        font-size: 14px;
+        height: 45px;
+    }
+
+    .logo{
+        display: none;
+    }
+
+    .pages button {
+        margin: 10px -32px;
+        text-align: center;
+        width: 100%;
+    }
+
+    .hamburger {
+        display: flex;
+        width: 30px;
+        height: 30px;
+        margin-left: 322px;
+    }
+
+    .main-logo{
+        margin-left: 16px;
+        display: flex;
+        width: 40px;
+        height: 40px;
+    }
+
+    .top-banner{
+        width: 358px;
+        height: 41px;
+        font-size: 14px;
+        font-weight: 400;
+    }
+
+    .top-banner p{
+        width: 625px;
+        height: 21px;
+        margin: 0;
+        padding: 10px 48px 10px 16px;
+    }
+
+    .top-banner img{
+        position: relative;
+        transform: translate(360px,-17px)
+    }
+    
+    .top-banner img:hover{
+        transform: rotate(0deg);
+        transform: translate(360px,-17px)
+    }    
+
+    .footer{
+        height: 767px;
+    }
+    
+    .cpy{
+        margin-top: 100px;
+        max-width: 426px;
+        width: auto;
+        height: 215px;
+        display: flex;
+        align-items: center;
+        padding-bottom: 50px;
+        border-bottom: 0;
+    }
+    
+    .logo-cpy{
+        width: 44px;
+        height: 44px;
+        margin-left: 20px;
+    }
+    
+    .contact{
+        margin-top: 40px;
+        margin-left: 20px;
+    }
+    
+    .second-part{
+        margin-top: 620px;
+    }
+    
+    .one-ft{
+        margin-left: -225px;
+    }
+    
+    .btn-ones{
+        font-size: 14px;
+    }
+    
+    .btn-ones p{
+        cursor: pointer;
+        margin-top: 4px;
+    }
+    
+    .two-ft{
+        margin-left: 30px;
+    }
+    
+    .type-two{
+        color: #bebebe;
+    }
+    
+    .btn-twos{
+        font-size: 14px;
+    }
+    
+    .btn-twos p{
+        cursor: pointer;
+        margin-top: 4px;
+    }
+    
+    .three-ft{
+        margin-top: 200px;
+        margin-left: -200px;
+    }
+    
+    .type-three{
+        color: #bebebe;
+    }
+    
+    .img-threes{
+        margin-top: 14px;
+    }
+    
+    .first{
+        margin-left: 0;
+        cursor: pointer;
+    }
+    
+    .second, .third{
+        margin-left: 14px;
+        cursor: pointer;
+    }
+    
+    .cpyout span{
+        display: flex;
+        margin-top: 400px;
+        justify-content: center;
+    }
+    
+    }
+    
+    .pages.active {
+    display: flex;
+    }
+    
+    /* Styles of Scrollbar */
+    
+    
+    ::-webkit-scrollbar {
+    width: 8px;
+    }
+    
+    ::-webkit-scrollbar-track {
+    background: var(--gray);
+    }
+    
+    ::-webkit-scrollbar-thumb {
+    background-color: #888;
+    border-radius: 10px;
+    border: 2px solid var(--dark-gray);
+    }
+    
+    ::-webkit-scrollbar-thumb:hover {
+    background: #555;
+    }
+    

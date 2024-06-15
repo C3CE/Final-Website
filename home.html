@@ -21,10 +21,17 @@
       </div>
     </div>
     <div class="navbar">
+      <img class="main-logo" src="Images/Logo.svg" alt="logo" class="logo" />
+      <img
+        src="Images/hb.svg"
+        alt="Menu"
+        class="hamburger"
+        onclick="toggleMenu()"
+      />
       <div class="pages">
         <img src="Images/Logo.svg" alt="logo" class="logo" />
         <button><a href="#">Home</a></button>
-        <button><a href="#">Course</a></button>
+        <button><a href="course.html">Course</a></button>
         <button><a href="#">About Us</a></button>
         <button><a href="#">Pricing</a></button>
         <button><a href="#">Contact</a></button>
@@ -34,6 +41,7 @@
         <button class="login"><a href="#">Login</a></button>
       </div>
     </div>
+    <script src="hamburger.js"></script>
     <main class="main">
       <div class="title">
         <img
@@ -58,13 +66,13 @@
         <button class="vp"><a href="#">View Pricing</a></button>
       </div>
       <div class="sponsor-bar">
-        <img src="Images/Card-1.svg" alt="spotify" />
-        <img src="Images/Card-2.svg" alt="zoom" />
-        <img src="Images/Card-3.svg" alt="amazon" />
-        <img src="Images/Card-4.svg" alt="adobe" />
-        <img src="Images/Card-5.svg" alt="notion" />
-        <img src="Images/Card-6.svg" alt="netflix" />
-        <img src="Images/Card.svg" alt="zapier" />
+        <img src="Images/Card-1.svg" alt="spotify" class="spotify" />
+        <img src="Images/Card-2.svg" alt="zoom" class="zoom" />
+        <img src="Images/Card-3.svg" alt="amazon" class="amazon" />
+        <img src="Images/Card-4.svg" alt="adobe" class="adobe" />
+        <img src="Images/Card-5.svg" alt="notion" class="notion" />
+        <img src="Images/Card-6.svg" alt="netflix" class="netflix" />
+        <img src="Images/Card.svg" alt="zapier" class="zapier" />
       </div>
     </main>
     <div class="video">
@@ -452,7 +460,7 @@
             <img src="Images/plus.svg" alt="pluse" />
           </div>
           <div class="question">
-            <p>
+            <p id="question-a">
               Are the courses self-paced or do they have specific start and end
               dates?
             </p>
@@ -470,41 +478,58 @@
       </div>
     </div>
     <footer class="footer">
-      <div class="cpy">
-        <div class="first-part">
-          <img src="Images/Logo.svg" alt="logo" class="logo-cpy" />
-          <div class="contact">
-            <div class="mail">
-              <img src="Images/email.svg" alt="email" class="mail-img" />
-              <p>hello@skillbridge.com</p>
+      <div class="cpyout">
+        <div class="cpy">
+          <div class="first-part">
+            <img src="Images/Logo.svg" alt="logo" class="logo-cpy" />
+            <div class="contact">
+              <div class="mail">
+                <img src="Images/email.svg" alt="email" class="mail-img" />
+                <p>hello@skillbridge.com</p>
+              </div>
+              <div class="phone">
+                <img src="Images/phone.svg" alt="phone" class="phone-img" />
+                <p>+91 91813 23 2309</p>
+              </div>
+              <div class="map">
+                <img
+                  src="Images/location.svg"
+                  alt="location"
+                  class="location-img"
+                />
+                <p>Somewhere in the World</p>
+              </div>
             </div>
-            <div class="phone">
-              <img src="Images/phone.svg" alt="phone" class="phone-img" />
-              <p>+91 91813 23 2309</p>
+          </div>
+          <div class="second-part">
+            <div class="one">
+              <p class="type-one">Home</p>
+              <div class="btn-ones">
+                <p>Benefits</p>
+                <p>Our Courses</p>
+                <p>Our Testimonials</p>
+                <p>Our FAQ</p>
+              </div>
             </div>
-            <div class="map">
-              <img
-                src="Images/location.svg"
-                alt="location"
-                class="location-img"
-              />
-              <p>Somewhere in the World</p>
+            <div class="two">
+              <p class="type-two">About Us</p>
+              <div class="btn-twos">
+                <p>Company</p>
+                <p>Achievements</p>
+                <p>Our Goals</p>
+              </div>
+            </div>
+            <div class="three">
+              <p class="type-three">Social Profiles</p>
+              <div class="img-threes">
+                <img class="first" src="Images/fb.svg" alt="fb" />
+                <img class="second" src="Images/twt.svg" alt="twt" />
+                <img class="third" src="Images/in.svg" alt="in" />
+              </div>
             </div>
           </div>
         </div>
-        <div class="second-part">
-          <div class="one">
-            <p class="home one">Home</p>
-            <div>
-              <p>Benefits</p>
-              <p>Our Courses</p>
-              <p>Our Testimonials</p>
-              <p>Our FAQ</p>
-            </div>
-          </div>
-          <div class="two"></div>
-          <div class="three"></div>
-        </div>
+        <span>© 2023 Skillbridge. All rights reserved.</span>
       </div>
     </footer>
   </body>

@@ -89,6 +89,15 @@ body{
     filter: drop-shadow(0 0 5px gray);
 }
 
+.main-logo{
+    display: none;
+}
+
+.hamburger {
+    display: none;
+    cursor: pointer;
+}
+
 .pages{
     margin-left: 120px;
 }
@@ -555,7 +564,7 @@ body{
 }
 
 .our-testimonials-paragraph{
-    font-size: 18px;
+    font-size: 18px;    
     font-weight: 400;
     width: 1117px;
     height: 54px;
@@ -607,7 +616,7 @@ body{
     display: flex;
     width: 783.5px;
     height: 123px;
-    padding: 30px  50px;
+    padding: 30px 50px;
 }
 
 .testimonials img{
@@ -664,7 +673,7 @@ body{
 }
 
 .our-pricing-title{
-    font-size: 48px;
+    font-size: 38px;
     font-weight: 600;
 }
 
@@ -682,9 +691,10 @@ body{
     border: none;
     font-size: 18px;
     height: 47px;
-    width: 122px;
+    width: 102px;
     border-radius: 8px;
     margin-top: 69px;
+    margin-left: -70px;
     transition: all 0.3s ease-in;
 }
 
@@ -704,10 +714,10 @@ body{
     border: none;
     font-size: 18px;
     height: 47px;
-    width: 122px;
+    width: 102px;
     border-radius: 8px;
     margin-top: 69px;
-    margin-left: -285px;
+    margin-left: -290px;
     transition: all 0.3s ease-in;
 }
 
@@ -728,15 +738,18 @@ body{
 .pricing{
     width: 1597px;
     height: 1226px;
-    display: grid;
-    grid-template-columns: repeat(2, 703.5px);
-    grid-template-rows: repeat(1, 1166px);
     grid-gap: 30px;
     border-radius: 12px;
     background-color: var(--dark-gray);
     margin-top: 80px;
     margin-left: auto;
     margin-right: auto;
+    display: flex;
+}
+
+.pricing-one, .pricing-two{
+    width: 703.5px;
+    height: 1066px;
 }
 
 .pricing-one{
@@ -745,6 +758,7 @@ body{
     margin-top: 80px;
     border-radius: 12px;
     justify-content: center;
+    margin-left: 80px;
 }
 
 .pricing-two{
@@ -840,22 +854,24 @@ body{
     font-weight: 600;
 }
 
+
+/* Styles of FAQ */
+
+
 .faq{
     margin-top: 150px;
-    margin-left: 50px;
     width: 1595px;
     height: 1052px;
     background-color: var(--dark-gray);
     border-radius: 20px;
-    display: grid;
-    grid-template-columns: repeat(408px, 7867px);
-    grid-gap: 120px;
+    display: flex;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .faq-text{
-    grid-column-start: 1;
-    grid-column-end: 2;
-    margin-left: 100px;
+    margin-right: 130px;
     margin-top: 100px;
     width: 408px;
     color: #fff;
@@ -911,6 +927,7 @@ body{
 }
 
 .xmark-cnt img{
+    cursor: pointer;
     position: relative;
     transform: translate(710px, -20px);
 }
@@ -934,6 +951,7 @@ body{
 }
 
 .rounded-arrow img{
+    cursor: pointer;
     transform: translate(703px, -40px);
     width: 46px;
     height: 46px;
@@ -959,11 +977,13 @@ body{
 }
 
 .question img{
+    cursor: pointer;
     position: relative;
     transform: translate(760px, -50px);
 }
 
 #img-plus{
+    cursor: pointer;
     position: relative;
     transform: translate(760px, -70px);
 }
@@ -984,15 +1004,22 @@ body{
 
 .cpy{
     margin-top: 100px;
-    width: 1596px;
+    max-width: 1920px;
+    width: auto;
     height: 215px;
-        display: flex;
+    display: flex;
     align-items: center;
+    padding-bottom: 50px;
+    border-bottom: 1px solid gray;
 }
 
 .logo-cpy{
     width: 54px;
     height: 54px;
+}
+
+.contact{
+    margin-top: 40px;
 }
 
 .mail{
@@ -1030,6 +1057,919 @@ body{
 .location-img{
     width: 24px;
     height: 24px;
+}
+
+.second-part{
+    display: flex;
+}
+
+.one{
+    margin-left: 559px;
+}
+
+.type-one{
+    color: #bebebe;
+}
+
+.btn-ones{
+    margin-top: 14px;
+}
+
+.btn-ones p{
+    cursor: pointer;
+    margin-top: 4px;
+}
+
+.two{
+    margin-left: 30px;
+}
+
+.type-two{
+    color: #bebebe;
+}
+
+.btn-twos{
+    margin-top: 14px;
+}
+
+.btn-twos p{
+    cursor: pointer;
+    margin-top: 4px;
+}
+
+.three{
+    margin-left: 30px;
+}
+
+.type-three{
+    color: #bebebe;
+}
+
+.img-threes{
+    margin-top: 14px;
+}
+
+.first{
+    margin-left: 0;
+    cursor: pointer;
+}
+
+.second, .third{
+    margin-left: 14px;
+    cursor: pointer;
+}
+
+.cpyout span{
+    display: flex;
+    margin-top: 50px;
+    justify-content: center;
+}
+
+
+/* Responsive Design */
+
+
+@media (max-width: 426px) {
+
+    .pages {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        background-color: var(--gray);
+        position: absolute;
+        top: 60px;
+        left: 0;
+        position: static;
+        transform: translate(-110px,80px);
+        z-index: 1;
+        width: auto;
+        height: auto;
+        margin-left: 0;
+        padding-top: 0;
+        box-shadow: none;
+    }
+
+    .main{
+        width: 426px;
+        margin-top: -40px;
+    }
+
+    .title-bg{
+        width: 357px;
+        height: 76px;
+    }
+
+    .flesh-effect{
+        width: 39px;
+        height: 43px;
+        position: absolute;
+        transform: translate(-180px, -40px);
+    }
+
+    .flesh{
+        width: 18px;
+        height: 21px;
+    }
+
+    .unlock, .ycp{
+        font-size: 16px;
+    }
+
+    .signup{
+        position: absolute;
+        transform: translate(-900px,20px);
+        width: 53px;
+        font-size: 14px;
+    }
+
+    .login{
+        position: absolute;
+        transform: translate(-850px);
+        width: 78px;
+        font-size: 14px;
+        height: 45px;
+    }
+
+    .logo{
+        display: none;
+    }
+
+    .pages button {
+        margin: 10px -32px;
+        text-align: center;
+        width: 100%;
+    }
+
+    .hamburger {
+        display: flex;
+        width: 30px;
+        height: 30px;
+        margin-left: 322px;
+    }
+
+    .main-logo{
+        margin-left: 16px;
+        display: flex;
+        width: 40px;
+        height: 40px;
+    }
+
+    .top-banner{
+        width: 358px;
+        height: 41px;
+        font-size: 14px;
+        font-weight: 400;
+    }
+
+    .top-banner p{
+        width: 625px;
+        height: 21px;
+        margin: 0;
+        padding: 10px 48px 10px 16px;
+    }
+
+    .top-banner img{
+        position: relative;
+        transform: translate(360px,-17px)
+    }
+    
+    .top-banner img:hover{
+        transform: rotate(0deg);
+        transform: translate(360px,-17px)
+    }
+
+    .big-p{
+        width: 358px;
+        font-size: 24px;
+        text-align: center;
+        margin-left: 37px;
+    }
+
+    .small-p{
+        width: 358px;
+        height: 42px;
+        font-size: 14px;
+        margin-left: 37px;   
+    }
+
+    .zapier ,.zoom ,.amazon ,.notion{
+        display: none;
+    }
+
+    .sponsor-bar{
+        width: 426px;
+        margin-top: 50px;
+    }
+
+    .sponsor-bar img{
+        width: 150px;
+        height: 74px;
+    }
+
+    .video-tumbnail{
+        width: 400px;
+        height: auto;
+        margin-top: -600px;
+    }
+
+    .benefits{
+        width: 400px;
+        margin-top: -600px;
+        margin-left: -110px;
+    }
+
+    .benefits-text{
+        width: 358px;
+    }
+
+    .benefits-title{
+        font-size: 28px;
+    }
+
+    .benefits-paragraph{
+        font-size: 14px;
+        width: 360px;
+        height: 84px;
+    }
+
+    .benefits-btn{
+        font-size: 14px;
+        margin-top: 150px;
+        margin-left: -660px;
+        width: 96px;
+        height: 49px;
+    }
+
+    .benefits-btn:hover{
+        filter: drop-shadow(0 0 0);
+    }
+    
+    .six-cards{
+        display: grid;
+        grid-template-columns: repeat(1,358px);
+        grid-template-rows: repeat(4,293px);
+        grid-gap: 20px;
+        margin-top: 40px;
+        place-content: center;
+    }
+
+    .six-cards span{
+        width: 300px;
+        height: 37px;
+        font-size: 50px;
+        font-weight: 700;
+        margin-left: 260px;
+        margin-top: 20px;
+    }
+
+    .six-cards h1{
+        width: 300px;
+        height: 30px;
+        font-size: 20px;
+        font-weight: 600;
+        margin-left: 30px;
+    }
+
+    .six-cards p{
+        width: 300px;
+        height: 42px;
+        font-size: 14px;
+        font-weight: 400;
+        margin-left: 30px;
+    }
+
+    .arrow{
+        width: 50px;
+        height: 50px;
+        margin-top: 30px;
+        margin-left: 274px;
+    }
+
+    .arrow img{
+        width: 30px;
+        height: 30px;
+        margin-left: 10px;
+        margin-top: 10px;
+    }
+
+    .arrow:hover{
+        transform: rotate(0deg);
+        filter: drop-shadow(0 0 0);    
+    }
+
+    .card-one ,.card-two ,.card-three ,.card-four{
+        width: 358px;
+        height: 293px;
+    }
+
+    .card-five ,.card-six{
+        display: none;
+    }
+
+    .our-course{
+        width: 400px;
+        margin-top: 50px;
+        margin-left: -110px;
+    }
+
+    .our-course-text{
+        width: 358px;
+    }
+
+    .our-course-title{
+        font-size: 28px;
+    }
+
+    .our-course-paragraph{
+        font-size: 14px;
+        width: 360px;
+        height: 84px;
+    }
+
+    .our-course-btn{
+        font-size: 14px;
+        margin-top: 150px;
+        margin-left: -660px;
+        width: 96px;
+        height: 49px;
+    }
+
+    .our-course-btn:hover{
+        filter: drop-shadow(0 0 0);
+    }
+
+    .courses{
+        display: grid;
+        grid-template-columns: repeat(1,357px);
+        grid-template-rows: repeat(8,551px);
+        grid-gap: 30px;
+        margin-top: 40px;
+        place-content: center;
+    }
+
+    .courses img{
+        width: 309px;
+        height: 172px;
+        margin-left: 24px;
+        margin-top: 24px;
+    }
+    
+    .course-time{
+        width: 86px;
+        height: 34px;
+        margin-left: -313px;
+        border-radius: 8px;
+        color: #fff;
+        background-color: var(--dark-gray);
+        border: 1px solid gray;
+        font-size: 14px;
+        font-weight: 400;
+        position: relative;
+        transform: translate(0, 40px);
+    }
+    
+    .course-type{
+        width: 89px;
+        height: 34px;
+        margin-left: 10px;
+        border-radius: 8px;
+        color: #fff;
+        background-color: var(--dark-gray);
+        border: 1px solid gray;
+        font-size: 14px;
+        font-weight: 400;
+        position: relative;
+        transform: translate(0, 40px);
+    }
+    
+    .course-intermediate{
+        width: 116px;
+        height: 34px;
+        margin-left: 10px;
+        border-radius: 8px;
+        color: #fff;
+        background-color: var(--dark-gray);
+        border: 1px solid gray;
+        font-size: 14px;
+        font-weight: 400;
+        cursor: pointer;
+        position: relative;
+        transform: translate(0, 40px);
+    }
+    
+    .lector{
+        margin-left: -525px;
+        margin-top: 90px;
+        color: #fff;
+        font-size: 20px;
+        font-weight: 500;
+        font-size: 16px;
+    }
+    
+    .courses-text{
+        margin-top: 100px;
+        color: #fff;
+        margin-left: 24px;
+    }
+    
+    .course-title{
+        font-size: 18px;
+        font-weight: 600;
+    }
+    
+    .course-paragraph{
+        margin-top: 14px;
+        font-size: 14px;
+        font-weight: 400;
+        width: 308px;
+        height: 105px;
+    }
+
+    .gin{
+        margin-left: 24px;
+        margin-top: 34px;
+        width: 309px;
+        height: 49px;
+    }
+
+    .course-one ,.course-two ,.course-three ,.course-four ,.course-five ,.course-six{
+        width: 357px;
+        height: 557px;
+    }
+
+    .our-testimonials{
+        width: 400px;
+        margin-top: -1100px;
+        margin-left: -110px;
+    }
+    
+    .our-testimonials-text{
+        width: 358px;
+    }
+    
+    .our-testimonials-title{
+        font-size: 28px;
+    }
+    
+    .our-testimonials-paragraph{
+        font-size: 14px;
+        width: 360px;
+        height: 84px;
+    }
+    
+    .our-testimonials-btn{
+        font-size: 14px;
+        margin-top: 150px;
+        margin-left: -660px;
+        width: 96px;
+        height: 49px;
+    }
+    
+    .our-testimonials-btn:hover{
+        filter: drop-shadow(0 0 0);
+    }
+
+    .testimonials{
+        display: grid;
+        grid-template-columns: repeat(1,357px);
+        grid-template-rows: repeat(4,255px);
+        grid-gap: 30px;
+        margin-top: 80px;
+        place-content: center;
+    }
+
+    .testimonials-text{
+        font-size: 14px;
+        width: 370px;
+        height: 105px;
+        padding: 30px;
+    }
+
+    .testimonials img{
+        margin-top: 30px;
+        width: 50px;
+        height: 50px;
+        margin-left: -20px;
+    }
+    
+    .testimonials-name{
+        width: 100px;
+        height: 24px;
+        margin-top: 43px;
+        color: #fff;
+        font-size: 18px;
+        font-weight: 600;
+    }
+    
+    .rfs{
+        width: 137px;
+        height: 49px;
+        padding: 14px 16px;
+        font-size: 14px;
+        margin-top: 33px;
+    }
+    
+    .rfs:hover{
+        filter: drop-shadow(0 0 0);
+    }
+
+    .testimonials-one,.testimonials-two,.testimonials-three,.testimonials-four{
+        background-color: var(--dark-gray);
+        border-radius: 8px;
+    }    
+
+    .our-pricing{
+        width: 400px;
+        margin-left: -20px;
+    }
+    
+    .our-pricing-text{
+        width: 358px;
+    }
+    
+    .our-pricing-title{
+        font-size: 28px;
+    }
+    
+    .our-pricing-paragraph{
+        font-size: 14px;
+        width: 360px;
+        height: 84px;
+    }
+    
+    .monthly{
+        font-size: 14px;
+        margin-top: 150px;
+        margin-left: -600px;
+        width: 96px;
+        height: 49px;
+    }
+    
+    .monthly:hover{
+        filter: drop-shadow(0 0 0);
+    }
+    
+    .yearly{
+        font-size: 14px;
+        margin-top: 150px;
+        width: 96px;
+        height: 49px;
+    }
+
+    .pricing{
+        width: 400px;
+        height: 2207px;
+        grid-gap: 30px;
+        border-radius: 12px;
+        background-color: var(--dark-gray);
+        margin-top: 80px;
+        display: flex;
+    }
+    
+    .pricing-one, .pricing-two{
+        width: 380px;
+        height: 1070px;
+    }
+    
+    .pricing-one{
+        background-color: #282828;
+        border-radius: 8px;
+        margin-top: 10px;
+        border-radius: 12px;
+        justify-content: center;
+        margin-left: 10px;
+    }
+    
+    .pricing-two{
+        background-color: #282828;
+        border-radius: 8px;
+        margin-top: 10px;
+        border-radius: 12px;
+        margin-left: -410px;
+        margin-top: 1100px;
+    }
+    
+    .plan{
+        background-color: var(--purple);
+        color: #fff;
+        width: 320px;
+        height: 61px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-left: 30px;
+        margin-top: 50px;
+        border-radius: 8px;
+        font-size: 22px;
+        font-weight: 600;
+    }
+    
+    .plan-price{
+        width: 300px;
+        height: 58px;
+        display: flex;
+        justify-content: center;
+        margin-left: 40px;
+        margin-top: 50px;
+        color: #fff;
+    }
+    
+    .price{
+        font-size: 50px;
+        font-weight: 600;
+    }
+    
+    .month{
+        font-size: 14px;
+        font-weight: 500;
+        margin-top: 40px;
+    }
+    
+    .features{
+        width: 340px;
+        height: 700px;
+        padding: 80px;
+        border-radius: 14px 14px 0 0;
+        margin-top: 50px;
+        margin-left: 20px;
+        background-color: var(--dark-gray);
+    }
+    
+    .features-text{
+        display: flex;
+        width: 237px;
+        height: 18px;
+        color: #fff;
+        margin-left: -30px;
+        font-size: 20px;
+        font-weight: 500;
+        text-align: center;
+    }
+    
+    .marks{
+        filter: drop-shadow(0 0 5px gray);
+        margin-top: 20px;
+        color: #fff;
+        height: 60px;
+    }
+    
+    .marks img{
+        width: 24px;
+        height: 24px;
+        margin-left: -30px;
+        margin-top: 14px;
+    }
+    
+    .marks p{
+        font-size: 14px;
+        width: 181px;
+        height: 42px;
+        margin-left: -40px;
+    }
+    
+    .mark-btn{
+        color: #fff;
+        background-color: var(--purple);
+        width: 340px;
+        height: 57px;
+        margin-left: 20px;
+        border: none;
+        border-radius: 0 0 12px 12px;
+        cursor: pointer;
+        font-size: 18px;
+        font-weight: 600;
+    }
+    /*  */
+    .faq{
+        width: 400px;
+        height: 1227px;
+        grid-gap: 30px;
+        border-radius: 12px;
+        background-color: var(--dark-gray);
+        margin-top: 80px;
+        display: flex;
+    }
+    
+    .faq-text{
+        margin-right: 130px;
+        margin-top: 64px;
+        margin-left: 10px;
+        width: 408px;
+        color: #fff;
+    }
+    
+    .faq-text h1{
+        font-size: 28px;
+        font-weight: 600;
+        width: 308px;
+    }
+    
+    .faq-text p{
+        margin-top: 10px;
+        font-size: 14px;
+        font-weight: 400;
+    }
+    
+    .faq-text button{
+        margin-top: 20px;
+        width: 164px;
+        height: 63px;
+        cursor: pointer;
+    }
+    
+    .faq-text button a{
+        text-decoration: none;
+        color: var(--dark-gray);
+        font-size: 18px;
+        font-weight: 500;
+    }
+    /*  */
+    .faq-container{
+        margin-top: 300px;
+        margin-left: -310px;
+        color: #fff;
+    }
+    
+    .x{
+        margin-left: -265px;
+        width: 380px;
+        height: 326px;
+        border-radius: 12px;
+        background-color: #282828;
+    }
+    
+    .xmark-cnt{
+        width: 191px;
+        height: 48px;
+        font-size: 16px;
+        font-weight: 500;
+        margin-left: 50px;
+        padding-top: 30px;
+    }
+    
+    .xmark-cnt img{
+        position: relative;
+        transform: translate(240px, -30px);
+    }
+    
+    .absolutely{
+        width: 300px;
+        height: 63px;
+        font-size: 14px;
+        font-weight: 400;
+        margin-left: 50px;
+        margin-top: 70px;
+    }
+    
+    .rounded-arrow{
+        width: 181px;
+        height: 96px;
+        margin-left: 50px;
+        margin-top: 55px;
+        font-size: 14px;
+        font-weight: 500;
+    }
+    
+    .rounded-arrow img{
+        cursor: pointer;
+        transform: translate(230px, -40px);
+        width: 40px;
+        height: 40px;
+    }
+    
+    .plus{
+        margin-top: 30px;
+        margin-left: 10px;
+    }
+    
+    .question{
+        width: 340px;
+        height: 112px;
+        border-radius: 12px;
+        background-color: #282828;
+        margin-top: 30px;
+        margin-left: -255px;
+    }
+    
+    .question p{
+        width: 281px;
+        font-size: 16px;
+        font-weight: 500;
+        padding: 30px 30px;
+    }
+    
+    .question img{
+        cursor: pointer;
+        position: relative;
+        transform: translate(280px, -60px);
+    }
+    
+    #question-a{
+        height: 102px;
+    }
+
+    #img-plus{
+        cursor: pointer;
+        position: relative;
+        transform: translate(280px, -60px);
+    }
+
+    /*  */
+    
+    .footer{
+        height: 767px;
+    }
+    
+    
+    .cpy{
+        margin-top: 100px;
+        max-width: 426px;
+        width: auto;
+        height: 215px;
+        display: flex;
+        align-items: center;
+        padding-bottom: 50px;
+        border-bottom: 0;
+    }
+    
+    .logo-cpy{
+        width: 44px;
+        height: 44px;
+        margin-left: 20px;
+    }
+    
+    .contact{
+        margin-top: 40px;
+        margin-left: 20px;
+    }
+    
+    .second-part{
+        margin-top: 620px;
+    }
+
+    .one{
+        margin-left: -225px;
+    }
+    
+    .btn-ones{
+        font-size: 14px;
+    }
+    
+    .btn-ones p{
+        cursor: pointer;
+        margin-top: 4px;
+    }
+    
+    .two{
+        margin-left: 30px;
+    }
+    
+    .type-two{
+        color: #bebebe;
+    }
+    
+    .btn-twos{
+        font-size: 14px;
+    }
+    
+    .btn-twos p{
+        cursor: pointer;
+        margin-top: 4px;
+    }
+    
+    .three{
+        margin-top: 200px;
+        margin-left: -200px;
+    }
+    
+    .type-three{
+        color: #bebebe;
+    }
+    
+    .img-threes{
+        margin-top: 14px;
+    }
+    
+    .first{
+        margin-left: 0;
+        cursor: pointer;
+    }
+    
+    .second, .third{
+        margin-left: 14px;
+        cursor: pointer;
+    }
+    
+    .cpyout span{
+        display: flex;
+        margin-top: 400px;
+        justify-content: center;
+    }
+
+}
+
+.pages.active {
+    display: flex;
 }
 
 
